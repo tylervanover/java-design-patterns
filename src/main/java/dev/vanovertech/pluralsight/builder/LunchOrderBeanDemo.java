@@ -9,6 +9,12 @@ public class LunchOrderBeanDemo {
         lunchOrderBean.setDressing("Mustard");
         lunchOrderBean.setMeat("Ham");
 
+        /* I have no defined contract for how to build a LunchOrder Bean
+            and the class is mutable. I can directly access members with setters.
+            We could try the Telescoping method (LunchOrderTele), but even that has
+            drawbacks.
+         */
+
         System.out.println(lunchOrderBean);
     }
 }
